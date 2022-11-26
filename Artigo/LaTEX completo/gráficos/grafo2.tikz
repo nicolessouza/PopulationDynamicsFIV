@@ -1,0 +1,28 @@
+\begin{tikzpicture}[]
+
+%nomenclaturas
+\tkzDefPoints{ 1.5/1.5/S, 7.5/1.5/I};      
+\tkzLabelPoints[above](S, I);
+
+%quadrados
+\draw[line width=1pt] (0,0) -- (3,0) -- (3,3) -- (0,3) -- (0,0);
+\draw[line width=1pt] (6,0) -- (9,0) -- (9,3) -- (6,3) -- (6,0);
+
+%setas superiores
+\draw[->, line width=1pt] (1.5,5) -- node[right]{$b$}(1.5,3.2) ;
+
+
+%setas inferiores
+\draw[->, line width=1pt] (1.5,-0.5) -- node[left]{$m$} (1.5,-2);
+\draw[->, line width=1pt] (7,-0.5) -- node[left]{$m$} (7,-2);
+\draw[->, line width=1pt] (8,-0.5) -- node[right]{$\alpha$} (8,-2);
+
+%setas horizontais
+\draw[->, line width=1pt] (3.5,1.5) -- node[above]{$\Omega$} (5.5,1.5);
+\tkzDefPoints {4/0.5/T1, 4/0/T2};
+
+%seta superior
+\draw[->, line width=1pt] (7.5,3.25) to [out = 120, in = 50](2.5,3.25);
+
+
+\end{tikzpicture}
